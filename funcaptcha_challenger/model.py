@@ -23,8 +23,8 @@ class BaseModel:
 
     def _initialize_model(self):
         model_filename = os.path.join(model_root_path, self.model_name)
-        version_url = "https://github.com/MrDgbot/funcaptcha-challenger/releases/download/model/version.json"
-        model_url = f"https://github.com/MrDgbot/funcaptcha-server/releases/download/model/{self.model_name}"
+        version_url = "https://github.com/shuaibibobo/funcaptcha-challenger/releases/download/test/version.json"
+        model_url = f"https://github.com/shuaibibobo/funcaptcha-challenger/releases/download/test/{self.model_name}"
 
         if not os.path.exists(model_filename):
             logger.debug(f"model {self.model_name} not found, downloading...")
